@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import App from "./js/App/App.js";
+import Game from './js/App/Morpion';
+import Products from "./js/Products/Products";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(
+    <div>
+        <App name="Quentin"/>
+        <Game/>
+        <br/>
+        <br/>
+        <Products/>
+    </div>
+    ,
+    document.getElementById('root')
+);
